@@ -15,7 +15,7 @@ html, body {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(0, 243, 255, 0.3)); /* Soft cyan gradient */
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(0, 243, 255, 0.3)); /* Soft cyan gradient */
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -35,6 +35,11 @@ nav {
     font-weight: bold;
     color: #00f3ff;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #ff80ff; /* Pink color on hover */
 }
 
 .nav-links {
@@ -47,11 +52,12 @@ nav {
     text-decoration: none;
     color: #f0f0f0;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #00f3ff;
+    color: #00f3ff; /* Cyan color on hover */
+    transform: translateY(-5px); /* Hover effect for link */
 }
 
 /* Hero Section */
@@ -69,11 +75,22 @@ nav {
     font-size: 50px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-content h1:hover {
+    transform: translateY(-10px);
+    color: #ff80ff; /* Pink color on hover */
 }
 
 .hero-content p {
     font-size: 24px;
     font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.hero-content p:hover {
+    color: #00f3ff; /* Cyan color on hover */
 }
 
 /* Section Styling */
@@ -92,6 +109,11 @@ h2 {
     margin-bottom: 20px;
     color: #00f3ff;
     text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #ff80ff; /* Pink color on hover */
 }
 
 p {
@@ -113,11 +135,13 @@ p {
     font-size: 16px;
     color: #fff;
     box-shadow: 0 4px 10px rgba(0, 243, 255, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .skills .skill-list li:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 243, 255, 0.2);
+    background: linear-gradient(135deg, #333, #ff80ff); /* Change to pink gradient */
 }
 
 /* Projects Section */
@@ -145,16 +169,27 @@ p {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 243, 255, 0.2);
+    background: linear-gradient(135deg, #444, #ff80ff); /* Change to pink gradient */
 }
 
 .project-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #00f3ff;
+    transition: color 0.3s ease;
+}
+
+.project-card h3:hover {
+    color: #ff80ff; /* Pink color on hover */
 }
 
 .project-card p {
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.project-card p:hover {
+    color: #00f3ff; /* Cyan color on hover */
 }
 
 /* Contact Section */
@@ -170,16 +205,21 @@ p {
 .contact-info li {
     margin-bottom: 10px;
     color: #fff;
+    transition: color 0.3s ease;
+}
+
+.contact-info li:hover {
+    color: #00f3ff; /* Cyan color on hover */
 }
 
 .contact-info li a {
     text-decoration: none;
-    color: #00f3ff;
+    color: #ff80ff;
     transition: color 0.3s ease;
 }
 
 .contact-info li a:hover {
-    color: #fff;
+    color: #fff; /* White color on hover */
 }
 
 /* Footer */
@@ -188,6 +228,11 @@ footer {
     padding: 20px;
     text-align: center;
     color: #fff;
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: linear-gradient(135deg, rgba(255, 128, 255, 0.2), rgba(255, 128, 255, 0.3)); /* Hover effect for footer */
 }
 
 footer p {
