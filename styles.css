@@ -193,7 +193,7 @@ span{
         border-left: 3px solid #b74b4b;
     }
 }
-@keyframes words{
+/* @keyframes words{
     0%, 20%{
         content: "Data Analyst";
     }
@@ -208,8 +208,18 @@ span{
     }
     81%, 100%{
         content: "Script Writer";
-    }
+    } */
+
+@keyframes words {
+    0%, 20%   { content: "Data Enthusiast"; }
+    21%, 40%  { content: "Python Developer"; }
+    41%, 60%  { content: "Machine Learning Engineer"; }
+    61%, 80%  { content: "Open Source Contributor"; }
+    81%, 100% { content: "Tech Blogger"; }
 }
+
+
+
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
