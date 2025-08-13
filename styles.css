@@ -241,3 +241,16 @@ span{
         margin-top: 4rem;
     }
 }
+
+.typing-text {
+    display: inline-block;
+    min-height: 1.5em; /* prevents overlap */
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .typing-text {
+        font-size: 16px; /* smaller for mobile */
+        min-height: 1.2em;
+    }
+}
