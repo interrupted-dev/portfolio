@@ -1,54 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="./favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aman | Portfolio</title>
 
-    <title>AmanCodes | DA</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" type="image/png" href="./favicon.png">
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- <header>
-        <a href="#" class="logo">Aman</a>
-        <nav>
-            <a href="#" class="active"> Home</a>
+
+<main class="container">
+
+  <!-- PROFILE -->
+  <section class="profile">
+
+    <div class="profile-top">
+      <!-- <img src="assets/profile.jpg" class="avatar"> -->
+      <div>
+        <h1>Hi, I’m Aman</h1>
+        <p class="role">Machine Learning Student</p>
+        <p class="meta"><span class="status-dot" aria-hidden="true"></span>Open to internships · India</p>
+
+        <div class="links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle floating-toggle">🌙</button>
+
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>About</h3>
+      <p>I enjoy transforming messy data into meaningful insights using machine learning and visualization.</p>
+    </div>
+
+    <div class="block">
+      <h3>Skills</h3>
+      <div class="skills-terminal" aria-label="Interactive skills terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">skills.exe</span>
+          <span class="terminal-spacer" aria-hidden="true"></span>
+        </div>
+        <div class="terminal-body">
+          <div id="skills-output" class="terminal-output" aria-live="polite"></div>
+          <span class="terminal-cursor" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Medical Report Simplifier</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>Streamlit</span>
+            <span>NLP</span>
+            <span>Gemini</span>
+            <span>API</span>
             
-        </nav>
-    </header> -->
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
+          </div>
+          <p class="desc">Bridging the gap between clinical language and human understanding using structured text summarization.</p>
+          <p class="impact">↑ Applying NLP to make medical info readable.</p>
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Aman</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I am a final-year student exploring the fascinating world of data, I’m passionate about turning raw
-                information into powerful, actionable insights. With expertise in data analysis and a growing
-                proficiency in data science, I’m dedicated to uncovering patterns, solving complex problems, and making
-                data-driven decisions that drive real impact. <br> Let’s connect and see how data can unlock new
-                opportunities for innovation and success.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/interrupted-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
-            </div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohd.amanuddin.000@gmail.com&su=Let's%20Connect!&body=Dear%20[Recipient's%20Name],%0A%0AI%20hope%20this%20message%20finds%20you%20well.%20I%20am%20reaching%20out%20to%20inquire%20about%20potential%20opportunities%20related%20to%20your%20profile.%20Please%20let%20me%20know%20if%20you%20are%20available%20to%20discuss%20further.%0A%0ABest%20regards,%0A[your-Name]"
-                class="btn" target="_blank">
-                Contact Me
-            </a>
-             <a href="https://drive.google.com/file/d/1DX2byzuIM4TW9EKti4HWP4GKZQ5BLtt-/view?usp=sharing"
-                class="btn" target="_blank">
-                My Resume
-            </a>
+      </a>
 
-            <!-- <a href="mailto:mohd.amanuddin.000@gmail.com?subject=Let's%20Connect!&body=Dear%20[Recipient's%20Name],%0A%0AI%20hope%20this%20message%20finds%20you%20well.%20I%20am%20reaching%20out%20to%20inquire%20about%20potential%20opportunities%20related%20to%20your%20portfolio.%20Please%20let%20me%20know%20if%20you%20are%20available%20to%20discuss%20further.%0A%0ABest%20regards,%0A[your-Name]" class="btn">Contact Me</a> -->
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Medical Report Simplifier</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>Streamlit</span>
+            <span>NLP</span>
+            <span>Gemini</span>
+            <span>API</span>
+            
+          </div>
+          <p class="desc">Bridging the gap between clinical language and human understanding using structured text summarization.</p>
+          <p class="impact">↑ Applying NLP to make medical info readable.</p>
         </div>
-    </section>
+      </a>
+
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Medical Report Simplifier</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>Streamlit</span>
+            <span>NLP</span>
+            <span>Gemini</span>
+            <span>API</span>
+            
+          </div>
+          <p class="desc">Bridging the gap between clinical language and human understanding using structured text summarization.</p>
+          <p class="impact">↑ Applying NLP to make medical info readable.</p>
+        </div>
+      </a>
+
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Medical Report Simplifier</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>Streamlit</span>
+            <span>NLP</span>
+            <span>Gemini</span>
+            <span>API</span>
+            
+          </div>
+          <p class="desc">Bridging the gap between clinical language and human understanding using structured text summarization.</p>
+          <p class="impact">↑ Applying NLP to make medical info readable.</p>
+        </div>
+      </a>
+<!-- 
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Recommendation Engine</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>ML</span>
+            <span>Clustering</span>
+          </div>
+          <p class="desc">Built smart personalized suggestions.</p>
+          <p class="impact">↑ Improved prediction accuracy</p>
+        </div>
+      </a>
+
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Recommendation Engine</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>ML</span>
+            <span>Clustering</span>
+          </div>
+          <p class="desc">Built smart personalized suggestions.</p>
+          <p class="impact">↑ Improved prediction accuracy</p>
+        </div>
+      </a>
+
+
+      <a href="./project-page.html" class="project-card">
+        <img src="./demo.jpg">
+        <div class="project-body">
+          <div class="project-header">
+            <h3>Recommendation Engine</h3>
+            <span>↗</span>
+          </div>
+          <div class="tags">
+            <span>ML</span>
+            <span>Clustering</span>
+          </div>
+          <p class="desc">Built smart personalized suggestions.</p>
+          <p class="impact">↑ Improved prediction accuracy</p>
+        </div>
+      </a> -->
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h4>Intern — Data Analyst</h4>
+      <p>Company Name · Summer 2025</p>
+      <p>Worked on dashboards and analytics pipelines.</p>
+    </div>  
+
+    <br>
+
+    <div class="card">
+      <h4>Intern — Data Analyst</h4>
+      <p>Company Name · Summer 2025</p>
+      <p>Worked on dashboards and analytics pipelines.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h4>Your University</h4>
+      <p>B.Tech Computer Science · 2022–2026</p>
+      <br>
+      <h4>PGP in Data Science</h4>
+      <p>IBM DATA SCIENCE</p>
+    </div>
+  </section>
+
+  <footer class="footer-note">
+    Code, data, and a bit of frontend magic
+  </footer>
+
+</main>
+
+<!-- ANIMATION + DARK MODE SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Fade-in animation
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll("section, .project-card, .card, .content-card")
+    .forEach(el => {
+      el.classList.add("fade-in");
+      observer.observe(el);
+    });
+
+  // Skills terminal — starts once when the Skills section enters view
+  const skillsOutput = document.getElementById("skills-output");
+  const skillsSection = document.querySelector(".profile .block:nth-of-type(2)");
+  let skillsTerminalStarted = false;
+
+  const terminalLines = [
+  { text: "Skills Session — Type 'help' for commands", cls: "terminal-command" },
+
+  { text: "$ skills --layer data", cls: "terminal-command" },
+  { text: "> Python · NumPy · Pandas · SQL · Statistics", cls: "terminal-value" },
+
+  { text: "$ skills --layer viz", cls: "terminal-command" },
+  { text: "> Matplotlib · Seaborn · Plotly · Excel · Power BI", cls: "terminal-value" },
+
+  { text: "$ skills --layer ml", cls: "terminal-command" },
+  { text: "> Machine Learning · NLP · Deep Learning", cls: "terminal-value" },
+
+  { text: "$ skills --layer genai", cls: "terminal-command" },
+  { text: "> Generative AI · LangChain · AI Agents", cls: "terminal-value" },
+
+  { text: "$ skills --layer backend", cls: "terminal-command" },
+  { text: "> FastAPI · Pydantic · Streamlit", cls: "terminal-value" },
+
+  { text: "$ skills --layer infra", cls: "terminal-command" },
+  { text: "> Git · GitHub · Docker · Cloudflare Tunnels · Oracle Cloud", cls: "terminal-value" },
+
+
+
+  { text: "$ skills --all", cls: "terminal-command" },
+  { text: "> From data to production. Always learning.", cls: "terminal-highlight" }
+];
+
+  function startSkillsTerminal() {
+    if (skillsTerminalStarted || !skillsOutput) return;
+    skillsTerminalStarted = true;
+    let lineIndex = 0;
+    let charIndex = 0;
+
+    function typeNext() {
+      if (lineIndex >= terminalLines.length) return;
+      const line = terminalLines[lineIndex];
+      let current = skillsOutput.querySelector(`[data-line="${lineIndex}"]`);
+      if (!current) {
+        current = document.createElement("div");
+        current.dataset.line = lineIndex;
+        current.className = line.cls;
+        skillsOutput.appendChild(current);
+      }
+      if (charIndex < line.text.length) {
+        current.textContent += line.text.charAt(charIndex++);
+        setTimeout(typeNext, 10 + Math.random() * 18);
+      } else {
+        lineIndex++;
+        charIndex = 0;
+        setTimeout(typeNext, 150);
+      }
+    }
+    typeNext();
+  }
+
+  if (skillsSection) {
+    const skillsTerminalObserver = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        startSkillsTerminal();
+        skillsTerminalObserver.disconnect();
+      }
+    }, { threshold: 0.35 });
+    skillsTerminalObserver.observe(skillsSection);
+  }
+
+  // Dark mode toggle
+  const toggleBtn = document.getElementById("theme-toggle");
+
+  function setTheme(mode) {
+    if (mode === "dark") {
+      document.body.classList.add("dark");
+      toggleBtn.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark");
+      toggleBtn.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const isDark = document.body.classList.contains("dark");
+    setTheme(isDark ? "light" : "dark");
+  });
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) setTheme(savedTheme);
+});
+</script>
+
 </body>
-
 </html>
